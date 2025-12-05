@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running Prettier + ESLint (lint-staged)..."
+npx lint-staged
+
+echo "🔎 Running TypeScript type check..."
+npm run ts:check --workspaces=false
