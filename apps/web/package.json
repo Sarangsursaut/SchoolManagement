@@ -24,10 +24,11 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   },
-  "lint-staged": {
-  "*.{ts,tsx,js,jsx,json,md}": [
-    "prettier --write",
-    "eslint --fix"
-  ]
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "ts:check": "tsc --noEmit"
 }
+  
 }
