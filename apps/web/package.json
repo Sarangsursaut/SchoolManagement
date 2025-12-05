@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "ts:check": "tsc --noEmit"
   },
   "dependencies": {
     "mongoose": "^9.0.0",
@@ -25,10 +26,9 @@
     "typescript": "^5"
   },
   "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "ts:check": "tsc --noEmit"
-}
-  
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ts:check": "tsc --noEmit"
+  }
 }
